@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: arial;
+    flex-direction: column;
+    margin: 0;
+}
+header{
+    
+    background-color: rgb(122, 171, 172);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+}
+header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header a{
+ color:rgb(24, 23, 22);
+}
+.fa-facebook-f{
+    color:rgb(61, 115, 198);
+}
+.fa-twitter{
+   color: rgb(69, 183, 212);
+}
+.fa-google-plus-g{
+    color: rgb(213, 154, 52);
+}
+
+#logo{
+    margin:0px auto;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+
+}
+.menu li{
+    padding: 10px;
+}
+#social-link li{
+    padding: 10px;
+
+}
+#main{
+    display: flex;
+}
+aside{
+    padding: 15px;
+    flex: 0 0 20vw;
+    background: #CCFFFF;
+}
+article{
+    padding: 10px;
+
+}
+
+aside ul{
+    list-style: none;
+     padding: 0;
+}
+aside img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+aside ul a{
+    color: #4c6444;
+    padding: 10px;
+    display: block;
+    border-bottom:1px solid grey;
+}
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #181918;
+    font-size: 20px;
+    text-shadow: 10px 4px 12px #a28089;
+    text-decoration: underline;
+}
+
+.About{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    color: #010a01;
+    line-height: 25px;
+}
+
+
+/*---------------services-container------*/
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-box{
+    border: 1px solid #eee;
+    flex-basis: 33%;
+    padding: 10px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.service-box img{
+    width:100%;
+}
+
+.service-box h3{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.call-to-action{
+    margin-top: auto;
+    align-self: flex-start;
+}
+.call-to-action a{
+    background:grey;
+    color:white;
+    padding:8px 13px;
+    display: block;
+    border: 2px solid transparent;
+}
+.call-to-action a:hover{
+    background:transparent;
+    border: 2px solid gray;
+    color: #0b0b0b;
+    font-weight: bold;
+}
+
+footer
+{
+    background:  #000000;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0.4;
+}
+@media screen and (max-width:850px){
+    aside{
+        flex: 0 0 30vw;
+    
+    }
+    .service-box{
+        flex-basis: 48%;
+       
+    }
+    }
+    @media screen and (max-width:600px){
+          header{
+            flex-direction: column;
+          }
+          #logo{
+            order: -1;
+          }
+          article{
+            order:-1;
+          }
+          #main{
+            flex-direction: column;
+          }
+          .services-container{
+           flex-direction: column;
+           align-items: center;
+         }
+         h2{
+            text-align: center;
+         }
+         h4{
+            text-align: center;
+         }
+
+        }
